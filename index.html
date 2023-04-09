@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./resources/images/icon.png">
+    <script src="https://kit.fontawesome.com/b8b120e95c.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="music-player">
+            <div class="player">
+                <img src="./resources/images/record.jpg" alt="Record" class="record">
+                <h2 id="title">Song name</h2>
+                <div class="slide-container">
+                    <i class="fas fa-volume-down"></i>
+                    <input type="range" min="0" max="100" value="50" class="slider">
+                    <i class="fas fa-volume-up"></i>
+                </div>
+                <div class="progress-control">
+                    <input type="range" min="0" max="100" value="0" class="progress-bar">
+                </div>
+                <div class="controls">
+                    <button class="previous" id="previous"><i class="fas fa-step-backward"></i></button>
+                    <button class="play-pause" id="play-pause"><i class="fas fa-play"></i></button>
+                    <button class="next" id="next"><i class="fas fa-step-forward"></i></button>
+                </div>
+            </div>
+            <div class="playlist">
+                <h2>Playlist</h2>
+                <ul class="song-list">
+                    <li data-src="./resources/songs/cartoon-on-on-feat.daniel-levi-ncs-release.mp3"
+                        data-name="Cartoon - On & On (feat. Daniel Levi)" data-index="0">
+                        <span><img src="./resources/images/cartoon_on_and_on.jpg" alt="Cover"></span><span>Cartoon - On
+                            & On (feat. Daniel Levi)</span><span>03:27</span>
+                    </li>
+                    <li data-src="./resources/songs/janji-heroes-tonight-feat.johnning-ncs-release.mp3"
+                        data-name="Janji - Heroes Tonight (feat. Johnning)" data-index="1">
+                        <span><img src="./resources/images/janji_heroes_tonight.jpg" alt="Cover"></span><span>Janji -
+                            Heroes Tonight (feat. Johnning)</span><span>03:28</span>
+                    </li>
+                    <li data-src="./resources/songs/deaf-kev-invincible-ncs-release.mp3"
+                        data-name="DEAF KEV - Invincible" data-index="2">
+                        <span><img src="./resources/images/Deaf_Kev_Invincible.jpg" alt="Cover"></span><span>DEAF KEV -
+                            Invincible</span><span>04:33</span>
+                    </li>
+                    <li data-src="./resources/songs/different-heaven-eh-de-my-heart-ncs-release.mp3"
+                        data-name="Different Heaven & EH!DE - My Heart" data-index="3">
+                        <span><img src="./resources/images/Different_Heaven_EH!DE_My_Heart.jpg"
+                                alt="Cover"></span><span>Different Heaven & EH!DE - My Heart</span><span>04:27</span>
+                    </li>
+                    <li data-src="./resources/songs/disfigure-blank-ncs-release.mp3" data-name="Disfigure - Blank"
+                        data-index="4">
+                        <span><img src="./resources/images/Disfigure _Blank.jpg" alt="Cover"></span><span>Disfigure -
+                            Blank</span><span>03:29</span>
+                    </li>
+                    <li data-src="./resources/songs/warriyo-mortals-feat.laura-brehm-ncs-release.mp3"
+                        data-name="Warriyo - Mortals (feat. Laura Brehm)" data-index="5">
+                        <span><img src="./resources/images/Warriyo_Mortals.jpg" alt="Cover"></span><span>Warriyo -
+                            Mortals (feat. Laura Brehm)</span><span>03:49</span>
+                    </li>
+                    <li data-src="./resources/songs/elektronomia-sky-high-ncs-release.mp3"
+                        data-name="Elektronomia - Sky High" data-index="6">
+                        <span><img src="./resources/images/Elektronomia_Sky_High.jpg"
+                                alt="Cover"></span><span>Elektronomia - Sky High</span><span>03:58</span>
+                    </li>
+                    <li data-src="./resources/songs/electro-light-symbolism-ncs-release.mp3"
+                        data-name="Electro-Light - Symbolism" data-index="7">
+                        <span><img src="./resources/images/Electro_Light_Symbolism.jpg"
+                                alt="Cover"></span><span>Electro-Light - Symbolism</span><span>04:51</span>
+                    </li>
+                </ul>
+                <audio src="" id="audio"></audio>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
